@@ -4,6 +4,7 @@
 Official implementation of **"Spectral-Trustworthy Augmentation Harmonizer towards Automated Lung Auscultation under Pathological Sample-scarcity Scenario"** (IEEE TASLP 2026).
 
 ## Overview
+![STAH](Methodology_overview.png)
 
 STAH is a novel framework for automated lung auscultation comprising three synergistic components:
 - **SpecDiver (SD)**: Multi-level resampling with Borderline-SMOTE2 and Randomized Quantization
@@ -13,21 +14,15 @@ STAH is a novel framework for automated lung auscultation comprising three syner
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/STAH.git
-cd STAH
+git clone https://github.com/wangying1586/STAH_Automated-Lung-Auscultation.git
+cd STAH_Automated-Lung-Auscultation
 pip install -r requirements.txt
 ```
-
-### Requirements
-- Python >= 3.8
-- PyTorch >= 2.0.0
-- torchvision >= 0.15.0
-- numpy, scikit-learn, tqdm, matplotlib, seaborn, pandas, tabulate, timm
 
 ## Dataset Preparation
 
 ### SPRSound 2022/2023
-Download from [IEEE DataPort](https://ieee-dataport.org/documents/sprsound-paediatric-respiratory-sound-database).
+Download from [SJTU-SPRSound](https://github.com/SJTU-YONGFU-RESEARCH-GRP/SPRSound).
 
 Directory structure:
 ```
@@ -35,15 +30,15 @@ datasets/
 ├── sprsound_2022/
 │   ├── train_classification_wav/
 │   ├── train_classification_json/
-│   ├── test_wav/
-│   └── test_json/
+│   ├── valid_classification_wav/
+│   ├── valid_classification_json/
 └── sprsound_2023/
-    ├── restore_valid_classification_wav/
+    ├── valid_classification_wav/
     └── valid_classification_json/
 ```
 
 ### ICBHI 2017
-Download from [Kaggle](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database).
+Download from [ICBHI_2017_Challenge](https://bhichallenge.med.auth.gr/ICBHI_2017_Challenge).
 
 Directory structure:
 ```
@@ -219,32 +214,17 @@ STAH/
 └── experiments/              # Auto-generated experiment dirs
 ```
 
-## Results
-
-| Dataset | Task | Score |
-|---------|------|-------|
-| SPR'22 Task 1-1 | Binary | **91.02%** |
-| SPR'22 Task 2-1 | 3-class | **79.38%** |
-| SPR'22 Task 2-2 | 5-class | **69.87%** |
-| SPR'23 Task 1-1 | Binary | **82.47%** |
-| SPR'23 Task 2-1 | 3-class | **80.46%** |
-| SPR'23 Task 2-2 | 5-class | **73.02%** |
-| ICBHI 2-class | Binary | **73.52%** (AS) |
-| ICBHI 4-class | 4-class | **66.11%** (AS) |
-
 ## Citation
 
 ```bibtex
-@article{wang2026stah,
-  title={Spectral-Trustworthy Augmentation Harmonizer towards Automated Lung Auscultation under Pathological Sample-scarcity Scenario},
+@ARTICLE{11457658,
   author={Wang, Ying and Wang, Fan and Huang, Guoheng and Zheng, Xiaobin and Lei, Baiying and Yuan, Xiaochen},
-  journal={IEEE Transactions on Audio, Speech and Language Processing},
+  journal={IEEE Transactions on Audio, Speech and Language Processing}, 
+  title={Spectral-Trustworthy Augmentation Harmonizer towards Automated Lung Auscultation under Pathological Sample-scarcity Scenario}, 
   year={2026},
-  doi={10.1109/TASLPRO.2026.3678800}
-}
-```
-
-## License
-
-MIT License
+  volume={},
+  number={},
+  pages={1-15},
+  keywords={Lungs;Adaptation models;Pathology;Acoustics;Time-frequency analysis;Data mining;Visualization;Transfer learning;Spectrogram;Quantization (signal);Automated Lung Auscultation;Deep Learning;Data Quality Control;Domain Adaptation},
+  doi={10.1109/TASLPRO.2026.3678800}}
 ```
