@@ -220,11 +220,11 @@ STAH/
 @ARTICLE{11457658,
   author={Wang, Ying and Wang, Fan and Huang, Guoheng and Zheng, Xiaobin and Lei, Baiying and Yuan, Xiaochen},
   journal={IEEE Transactions on Audio, Speech and Language Processing}, 
-  title={Spectral-Trustworthy Augmentation Harmonizer towards Automated Lung Auscultation under Pathological Sample-scarcity Scenario}, 
+  title={Spectral-Trustworthy Augmentation Harmonizer Toward Automated Lung Auscultation Under Pathological Sample-Scarcity Scenario}, 
   year={2026},
-  volume={},
+  volume={34},
   number={},
-  pages={1-15},
-  keywords={Lungs;Adaptation models;Pathology;Acoustics;Time-frequency analysis;Data mining;Visualization;Transfer learning;Spectrogram;Quantization (signal);Automated Lung Auscultation;Deep Learning;Data Quality Control;Domain Adaptation},
+  pages={2007-2020},
+  keywords={Lungs;Adaptation models;Pathology;Acoustics;Time-frequency analysis;Data mining;Visualization;Transfer learning;Spectrogram;Quantization (signal);Automated lung auscultation;deep learning;data quality control;domain adaptation},
   doi={10.1109/TASLPRO.2026.3678800}}
 ```
